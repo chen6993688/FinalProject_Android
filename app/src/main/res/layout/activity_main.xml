@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Shcholarship Form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/t1" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1.Basic information"
+            android:textSize="20dp"
+            android:id="@+id/t2"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i1"
+            android:editable="true"
+            android:hint="Full FAMILY Name"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i2"
+            android:hint="FIRST Name"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i3"
+            android:hint="Email Adress"
+            android:singleLine="true"/>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i4"
+            android:hint="Mobile/Cell Phone Number"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Last Degree"
+            android:textSize="20dp"
+            android:id="@+id/t3"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i5"
+            android:hint="Name of LAST Degree"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i6"
+            android:hint="Name of University of LAST Degree"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i7"
+            android:hint="Rank in class"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i8"
+            android:hint="Approximate size of class"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i9"
+            android:hint="GPA"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Current Degree"
+            android:textSize="20dp"
+            android:id="@+id/t4"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i10"
+            android:hint="Name of CURRENT degree"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i11"
+            android:hint="Name of University of current degree"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i12"
+            android:hint="Expected completion data"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i13"
+            android:hint="Rank in class"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i14"
+            android:hint="Approximate size of class"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i15"
+            android:hint="GPA to date"
+            android:singleLine="true"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Scholarship State"
+            android:textSize="20dp"
+            android:id="@+id/t5"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Have you ever been awarded a National or other scholarship?"
+            android:textSize="15dp"
+            android:id="@+id/t6"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgs">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/sy"
+                android:onClick="ifScholar"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/sn"
+                android:onClick="ifScholar"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="If YES"
+            android:textSize="15dp"
+            android:id="@+id/t7"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i16"
+            android:hint="Name of scholarship"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i17"
+            android:hint="Year scholarship received"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i18"
+            android:hint="Name of scholarship"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i19"
+            android:hint="Year scholarship received"
+            android:singleLine="true"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Language State"
+            android:textSize="20dp"
+            android:id="@+id/t8"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you have a current English Language score?"
+            android:textSize="15dp"
+            android:id="@+id/t9"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgt">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/ty"
+                android:onClick="iftest"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/tn"
+                android:onClick="iftest"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="If YES"
+            android:textSize="15dp"
+            android:id="@+id/t10"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i20"
+            android:hint="Name of English test"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i21"
+            android:hint="Year of Test"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i22"
+            android:hint="Overall Score"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Interest"
+            android:textSize="20dp"
+            android:id="@+id/t11"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="What is your broad field/discipline interest?"
+            android:textSize="15dp"
+            android:id="@+id/t12"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i23"
+            android:hint="Your interest"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="What course/s are you interested in?"
+            android:textSize="15dp"
+            android:id="@+id/t13"/>
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Full PhD"
+            android:id="@+id/phd"
+            android:onClick="inter"/>
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Joint Phd with UoM"
+            android:id="@+id/jphd"
+            android:onClick="inter"/>
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Master by Coursework"
+            android:id="@+id/mc"
+            android:onClick="inter"/>
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Master by Research"
+            android:id="@+id/mr"
+            android:onClick="inter"/>
+
+        <CheckBox
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:id="@+id/other"
+            android:onClick="inter"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="OK and Send"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/saveButton"
+            android:onClick="send"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
